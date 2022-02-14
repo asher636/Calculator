@@ -359,12 +359,28 @@
                                             <action selector="setOperand:" destination="HRX-10-MTj" eventType="touchUpInside" id="tOO-YR-pfJ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEL-NP-lbP">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="hlR-am-IOT"/>
+                                            <constraint firstAttribute="width" constant="88" id="wQB-9R-CnA"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Cancel">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="restartCalculator:" destination="HRX-10-MTj" eventType="touchUpInside" id="Wg3-tm-mmH"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="80V-oP-kBh" secondAttribute="bottom" id="64B-Xx-ffU"/>
                                     <constraint firstAttribute="trailing" secondItem="80V-oP-kBh" secondAttribute="trailing" id="LCZ-D7-Jb6"/>
+                                    <constraint firstItem="XEL-NP-lbP" firstAttribute="leading" secondItem="Bhq-1J-p5W" secondAttribute="leading" id="V58-o2-dC6"/>
                                     <constraint firstAttribute="height" constant="44" id="e7l-2V-Jav"/>
+                                    <constraint firstAttribute="bottom" secondItem="XEL-NP-lbP" secondAttribute="bottom" id="m2r-5a-ZgV"/>
                                 </constraints>
                             </view>
                         </subviews>

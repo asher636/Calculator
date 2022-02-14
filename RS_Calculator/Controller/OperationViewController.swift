@@ -20,6 +20,8 @@ class OperationViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         resetView()
+        calculator.reset()
+        print(calculator)
     }
     
     private func resetView() {

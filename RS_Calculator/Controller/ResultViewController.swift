@@ -17,9 +17,11 @@ class ResultViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
         if let calculator = calculator {
             if let result = calculator.result {
-                resultLbl.text = result.description
+                resultLbl.text = Float(round(100 * result) / 100).description
             }
         }
     }

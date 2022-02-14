@@ -109,4 +109,9 @@ struct Calculator: CalculatorOps {
     mutating func sqroot(op1: Float) {
         self.result = sqrt(op1)
     }
+    
+    mutating func reset() {
+        self = Calculator()
+    }
+    
 }

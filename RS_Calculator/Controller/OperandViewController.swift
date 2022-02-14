@@ -21,6 +21,8 @@ class OperandViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
         if let calculator = calculator {
             if let operation = calculator.operation {
                 operationLbl.text = operation.rawValue
@@ -69,6 +71,10 @@ class OperandViewController: UIViewController {
                 self.performSegue(withIdentifier: "ShowResultSegue", sender: nil)
             }
         }
+    }
+    
+    @IBAction func restartCalculator(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     func updateOperandLbl(operand: String, text: String) -> String? {
