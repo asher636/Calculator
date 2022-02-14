@@ -79,7 +79,7 @@ struct Calculator: CalculatorOps {
             }
         case .divide:
             if let operand1 = operand1, let operand2 = operand2 {
-                self.multiply(op1: operand1, op2: operand2)
+                self.divide(op1: operand1, op2: operand2)
             }
         case .sqroot:
             if let operand1 = operand1 {
@@ -109,5 +109,4 @@ struct Calculator: CalculatorOps {
     mutating func sqroot(op1: Float) {
         self.result = sqrt(op1)
     }
-    
 }

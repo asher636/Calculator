@@ -23,4 +23,8 @@ class ResultViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func restartCalculator(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 }

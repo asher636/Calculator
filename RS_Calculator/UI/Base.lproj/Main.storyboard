@@ -424,9 +424,12 @@
                                             <constraint firstAttribute="height" constant="44" id="wCw-vn-2lJ"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Done">
+                                        <buttonConfiguration key="configuration" style="filled" title="Restart">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="restartCalculator:" destination="YKe-oS-lbG" eventType="touchUpInside" id="TXc-B0-wVR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>

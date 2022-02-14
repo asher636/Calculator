@@ -17,6 +17,15 @@ class OperationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        resetView()
+    }
+    
+    private func resetView() {
+        self.doneBtn.isEnabled = false
+        self.operationLbl.text = "?"
+    }
 
     @IBAction func updateOperation(_ sender: UIButton) {
         if let op = sender.titleLabel?.text {
