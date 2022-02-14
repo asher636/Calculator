@@ -16,6 +16,8 @@
 		102A591B27B995760016B69E /* RS_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A591A27B995760016B69E /* RS_CalculatorTests.swift */; };
 		102A592527B995760016B69E /* RS_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A592427B995760016B69E /* RS_CalculatorUITests.swift */; };
 		102A592727B995760016B69E /* RS_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A592627B995760016B69E /* RS_CalculatorUITestsLaunchTests.swift */; };
+		102A593927B999AA0016B69E /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A593827B999AA0016B69E /* Calculator.swift */; };
+		102A593D27B9B10B0016B69E /* OperandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A593C27B9B10B0016B69E /* OperandViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		102A592027B995760016B69E /* RS_CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RS_CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		102A592427B995760016B69E /* RS_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RS_CalculatorUITests.swift; sourceTree = "<group>"; };
 		102A592627B995760016B69E /* RS_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RS_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		102A593827B999AA0016B69E /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		102A593C27B9B10B0016B69E /* OperandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperandViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 		102A593527B996B70016B69E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				102A593827B999AA0016B69E /* Calculator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				102A590727B995750016B69E /* ViewController.swift */,
+				102A593C27B9B10B0016B69E /* OperandViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,7 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				102A590827B995750016B69E /* ViewController.swift in Sources */,
+				102A593927B999AA0016B69E /* Calculator.swift in Sources */,
 				102A590427B995750016B69E /* AppDelegate.swift in Sources */,
+				102A593D27B9B10B0016B69E /* OperandViewController.swift in Sources */,
 				102A590627B995750016B69E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
