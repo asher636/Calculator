@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class OperationViewController: UIViewController {
 
     @IBOutlet weak var operationLbl: UILabel!
     @IBOutlet weak var doneBtn: UIButton!

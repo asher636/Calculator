@@ -11,7 +11,7 @@
         <!--Calculator-->
         <scene sceneID="EdL-EF-WOk">
             <objects>
-                <viewController id="0Ij-50-TKv" customClass="ViewController" customModule="RS_Calculator" sceneMemberID="viewController">
+                <viewController id="0Ij-50-TKv" customClass="OperationViewController" customModule="RS_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FcQ-C2-dJL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -309,7 +309,7 @@
                                         <rect key="frame" x="0.0" y="339" width="374" height="109"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWw-Cn-Pem">
-                                                <rect key="frame" x="0.0" y="0.0" width="185" height="109"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="122" height="109"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="0">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
@@ -319,13 +319,23 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lR-7U-nWH">
-                                                <rect key="frame" x="189" y="0.0" width="185" height="109"/>
+                                                <rect key="frame" x="126" y="0.0" width="122" height="109"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title=".">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="updateOperand:" destination="HRX-10-MTj" eventType="touchUpInside" id="n1j-gH-YpR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM6-F6-dbG">
+                                                <rect key="frame" x="252" y="0.0" width="122" height="109"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="C">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="updateOperand:" destination="HRX-10-MTj" eventType="touchUpInside" id="Fci-hA-bjN"/>
                                                 </connections>
                                             </button>
                                         </subviews>

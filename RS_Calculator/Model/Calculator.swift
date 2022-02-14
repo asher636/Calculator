@@ -24,13 +24,13 @@ enum Operation: String {
     case null = "null"
 }
 
-class Calculator: CalculatorOps {
+struct Calculator: CalculatorOps {
     private(set) var operation: Operation?
     private(set) var operand1: Float?
     private(set) var operand2: Float?
     private(set) var result: Float?
     
-     func setOperation(op: String) {
+    mutating func setOperation(op: String) {
         switch op {
         case "+":
             operation = Operation.add
@@ -47,7 +47,7 @@ class Calculator: CalculatorOps {
         }
     }
     
-     func setOperand(operand: String, isSecondOperand: Bool) {
+    mutating func setOperand(operand: String, isSecondOperand: Bool) {
         if !isSecondOperand {
             operand1 = Float(operand)
         } else {
@@ -55,23 +55,23 @@ class Calculator: CalculatorOps {
         }
     }
     
-     func add(op1: Float, op2: Float) {
+    mutating func add(op1: Float, op2: Float) {
 
     }
     
-     func subtract(op1: Float, op2: Float) {
+    mutating func subtract(op1: Float, op2: Float) {
         
     }
     
-     func multiply(op1: Float, op2: Float) {
+    mutating func multiply(op1: Float, op2: Float) {
         
     }
     
-     func divide(op1: Float, op2: Float) {
+    mutating func divide(op1: Float, op2: Float) {
         
     }
     
-     func sqroot(op1: Float) {
+    mutating func sqroot(op1: Float) {
         
     }
     

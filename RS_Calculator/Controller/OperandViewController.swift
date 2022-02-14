@@ -14,7 +14,6 @@ class OperandViewController: UIViewController {
     @IBOutlet weak var doneBtn: UIButton!
     
     var calculator: Calculator?
-    var tempNumHolder: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,8 +64,14 @@ class OperandViewController: UIViewController {
     }
     
     func updateOperandLbl(operand: String, text: String) -> String? {
-        if (operand == "." && text.contains(".")) || text.count == 9 {
+        var tempNumHolder: String?
+        
+        if(operand == "C") {
+            tempNumHolder = "0"
             return tempNumHolder
+        }
+        else if (operand == "." && text.contains(".")) || text.count == 9 {
+            return text
         } else {
             if (operand == "." && text.hasPrefix("0")) {
                 tempNumHolder = text + operand
