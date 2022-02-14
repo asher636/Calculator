@@ -49,30 +49,65 @@ struct Calculator: CalculatorOps {
     
     mutating func setOperand(operand: String, isSecondOperand: Bool) {
         if !isSecondOperand {
-            operand1 = Float(operand)
+            if let operand = Float(operand) {
+                operand1 = operand
+                if operation == .sqroot {
+                    performOperation()
+                }
+            }
         } else {
-            operand2 = Float(operand)
+            if let operand = Float(operand) {
+                operand2 = operand
+                performOperation()
+            }
+        }
+    }
+    
+    mutating func performOperation() {
+        switch operation {
+        case .add:
+            if let operand1 = operand1, let operand2 = operand2 {
+                self.add(op1: operand1, op2: operand2)
+            }
+        case .subtract:
+            if let operand1 = operand1, let operand2 = operand2 {
+                self.subtract(op1: operand1, op2: operand2)
+            }
+        case .multiply:
+            if let operand1 = operand1, let operand2 = operand2 {
+                self.multiply(op1: operand1, op2: operand2)
+            }
+        case .divide:
+            if let operand1 = operand1, let operand2 = operand2 {
+                self.multiply(op1: operand1, op2: operand2)
+            }
+        case .sqroot:
+            if let operand1 = operand1 {
+                self.sqroot(op1: operand1)
+            }
+        default:
+            return
         }
     }
     
     mutating func add(op1: Float, op2: Float) {
-
+        self.result = op1 + op2
     }
     
     mutating func subtract(op1: Float, op2: Float) {
-        
+        self.result = op1 - op2
     }
     
     mutating func multiply(op1: Float, op2: Float) {
-        
+        self.result = op1 * op2
     }
     
     mutating func divide(op1: Float, op2: Float) {
-        
+        self.result = op1 / op2
     }
     
     mutating func sqroot(op1: Float) {
-        
+        self.result = sqrt(op1)
     }
     
 }

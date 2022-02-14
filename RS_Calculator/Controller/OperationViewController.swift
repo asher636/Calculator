@@ -30,7 +30,7 @@ class OperationViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SelectOp1" {
+        if segue.identifier == "SelectOp1Segue" {
             let destinationVC = segue.destination as! OperandViewController
             destinationVC.calculator = self.calculator
         }

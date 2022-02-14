@@ -18,6 +18,7 @@
 		102A592727B995760016B69E /* RS_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A592627B995760016B69E /* RS_CalculatorUITestsLaunchTests.swift */; };
 		102A593927B999AA0016B69E /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A593827B999AA0016B69E /* Calculator.swift */; };
 		102A593D27B9B10B0016B69E /* OperandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A593C27B9B10B0016B69E /* OperandViewController.swift */; };
+		102A593F27B9E4CD0016B69E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A593E27B9E4CD0016B69E /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		102A592627B995760016B69E /* RS_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RS_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		102A593827B999AA0016B69E /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		102A593C27B9B10B0016B69E /* OperandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperandViewController.swift; sourceTree = "<group>"; };
+		102A593E27B9E4CD0016B69E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				102A590727B995750016B69E /* OperationViewController.swift */,
 				102A593C27B9B10B0016B69E /* OperandViewController.swift */,
+				102A593E27B9E4CD0016B69E /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				102A590427B995750016B69E /* AppDelegate.swift in Sources */,
 				102A593D27B9B10B0016B69E /* OperandViewController.swift in Sources */,
 				102A590627B995750016B69E /* SceneDelegate.swift in Sources */,
+				102A593F27B9E4CD0016B69E /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -94,7 +94,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="HRX-10-MTj" kind="show" identifier="SelectOp1" id="6ho-ID-xDJ"/>
+                                            <segue destination="HRX-10-MTj" kind="show" identifier="SelectOp1Segue" id="6ho-ID-xDJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -391,7 +391,9 @@
                         <outlet property="doneBtn" destination="80V-oP-kBh" id="jBA-NQ-dLy"/>
                         <outlet property="operand1Lbl" destination="uhE-EZ-9EC" id="vFc-w1-w8c"/>
                         <outlet property="operand2Lbl" destination="QYP-vP-6kI" id="XGi-0h-nYP"/>
+                        <outlet property="operandLbl2StackView" destination="qhp-yV-AiL" id="W5a-qN-AhE"/>
                         <outlet property="operationLbl" destination="hhf-TZ-cxJ" id="j5c-gC-6nj"/>
+                        <segue destination="YKe-oS-lbG" kind="show" identifier="ShowResultSegue" id="3as-OM-a5u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrA-G9-cGC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -401,13 +403,13 @@
         <!--Result-->
         <scene sceneID="Asf-5D-lnA">
             <objects>
-                <viewController id="YKe-oS-lbG" sceneMemberID="viewController">
+                <viewController id="YKe-oS-lbG" customClass="ResultViewController" customModule="RS_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XTu-Kz-cF5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eP-FI-owe">
-                                <rect key="frame" x="0.0" y="64" width="414" height="179"/>
+                                <rect key="frame" x="0.0" y="160" width="414" height="179"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -450,6 +452,9 @@
                     <navigationItem key="navigationItem" title="Result" largeTitleDisplayMode="always" id="qBh-xW-SMV">
                         <barButtonItem key="backBarButtonItem" title=" " id="on8-Fj-jo5"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultLbl" destination="6eP-FI-owe" id="wb6-t3-3qy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxJ-gk-iwE" sceneMemberID="firstResponder"/>
             </objects>
