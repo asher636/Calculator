@@ -2,7 +2,7 @@
 
 ### Swift | UIKit | MVC 
 
-Calculator for RS by Asher Ahsan
+Basic Calculator task using MVC.
 
 * Tests and Error pop-ups will be added soon 🚀 
 
